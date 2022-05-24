@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+
+@media screen and (min-width: 64em) and (max-width: 250em) {
+  html, body {
+    margin: 0;
+    font-size: 100%;
+  }
+  .mobileV {
+    display: none;
+  }
+  .tabletV {
+    display: none;
+  }
+  .header_logo{
+    padding-top: 3em;
+    width: 13em;
+  }
+  .navbar_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    margin-top: 4em;
+    /* width: 85%; */
+  }
+  .navbar_li{
+    font-family: "Oswald";
+    list-style-type: none;
+    font-size: 1.2em;
+  }
+  
+
+  .navbar_a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar_a:hover {
+    color: white;
+  }
+  
+  .navbar_a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -0.1em;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar_a:hover::before {
+    transform: scaleX(1);
+  }
+  .first_block{
+    /* width: 90%;
+    padding-left: 10%; */
+    height: 80vh;
+    display: flex;
+    
+  }
+  .bucket{
+    float: left;
+    margin-left: -16%;
+  }
+  .home_title{
+    font-family: "Oswald";
+
+  }
+  .home_title_h1{
+    font-weight: 400;
+    width: 8em;
+    font-size: 3em;
+  }
+  .home_title_p{
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+  .home_title_box{
+    color: white;
+    background: #68B738;
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+  }
+  .title_container{
+    padding-left: 14%;
+    padding-top: 9%;
+  }
+  .first_block_left{
+    width: 45%;
+    padding-left: 5%;
+    z-index: 100;
+  }
+  .first_block_right{
+    width: 50%;
+    background: url(./assets/index-background-desktop.png) no-repeat right;
+    background-size: cover;
+  }
+  .second_block{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+  }
+  .first_cat{
+    padding-left: 5%;
+    padding-right: 2.5%;
+  }
+  .second_cat{
+    padding-left: 2.5%;
+    padding-right: 5%;
+  }
+  .fit{
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    background-color: #F2F2F2;
+    padding: 3%;
+    height:85%
+  }
+  .image_title{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+  .cat_img{
+    width: 20%
+  }
+  .cat_img2{
+    width: 30%
+  }
+  .cat_title{
+    padding-top: 4%;
+  }
+  .cat_text{
+    font-family: "Oswald";
+    padding-top: 5%;
+  }
+  .catalog{
+    font-family: "Oswald";
+    font-size: 2.2vw;
+  }
+  .catalog:hover::before{
+    background-position: left;
+    transition: all .3s ease-in-out;
+  }
+  .catalog::before{
+    width: 50px;
+    height: 22px;
+    background-image: url(./assets/arrow.svg);
+    content: "";
+    position: absolute;
+    margin-left: 14vw;
+    margin-top: 1.6vw;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10px;
+    transition: all .3s ease-in-out;
+  }
+  .howItworks{
+
+  }
+  .howItworks_title{
+    font-size: 4vw;
+  }
+  .fourstages{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    gap: 10vw;
+  }
+  .stage_block{
+    display: flex;
+    flex-direction: column;
+  }
+  .stage_bg1{
+    background: url(./assets/1.png)  no-repeat right;
+    background-size: contain;
+  }
+  .stage_bg2{
+    background: url(./assets/2.png) no-repeat right;
+    background-size: contain;
+
+  }
+  .stage_bg3{
+    background: url(./assets/3.png) no-repeat right;
+    background-size: contain;
+
+  }
+  .stage_bg4{
+    background: url(./assets/4.png) no-repeat right;
+    background-size: contain;
+
+  }
+  .stage_text{
+    font-family: "Oswald";
+    width: 100%;
+  }
+  .stage_img{
+    width: 5vw;
+  }
+  .third_block{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 43em) and (max-width: 64em) {
+  html, body {
+    margin: 0;
+    font-size: 100%;
+  }
+  .pcV {
+    display: none !important;
+  }
+  .mobileV {
+    display: none !important;
+  }
+  .header_logo{
+    padding-top: 3em;
+    /* width: 13em; */
+    padding-left: 3em;
+  }
+  .navbar_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    margin-top: 4.1em;
+  }
+  .navbar_li{
+    font-family: "Oswald";
+    list-style-type: none;
+    font-size: 1.4em;
+  }
+  
+
+  .navbar_a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar_a:hover {
+    color: black;
+  }
+  
+  .navbar_a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -0.1em;
+    left: 0;
+    background-color: #68B738;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar_a:hover::before {
+    transform: scaleX(1);
+  }
+  .first_block{
+    /* width: 90%;
+    padding-left: 10%; */
+    height: 80vh;
+    display: flex;
+    
+  }
+  .bucket{
+    margin-left: 5%;
+    position: absolute;
+    margin-top: -12%;
+    z-index: 0;
+    height: 60%;
+  }
+  .home_title{
+    font-family: "Oswald";
+    position: relative;
+    z-index: 100;
+  }
+  .home_title_h1{
+    font-weight: 400;
+    width: 8em;
+    font-size: 4em;
+  }
+  .home_title_p{
+    font-size: 2em;
+    font-weight: 100;
+  }
+  .home_title_box{
+    color: white;
+    background: #68B738;
+    width: 27vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+  }
+  .title_container{
+    padding-left: 14%;
+    padding-top: 11%;
+  }
+  .first_block_left{
+    width: 100%;
+  }
+  .header_tablet{
+    display: flex;
+    gap: 5em;
+  }
+  .logo_header{
+    width: 13em;
+  }
+  .second_block{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50vh;
+  }
+  .first_cat{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .second_cat{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  .fit{
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    background-color: #F2F2F2;
+    padding: 3%;
+    height:85%
+  }
+  .image_title{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+  .cat_img{
+    width: 20%
+  }
+  .cat_img2{
+    width: 30%
+  }
+  .cat_title{
+    padding-top: 4%;
+  }
+  .cat_text{
+    font-family: "Oswald";
+    padding-top: 5%;
+    font-size: 1.3em;
+  }
+  .catalog{
+    font-family: "Oswald";
+    font-size: 4.2vw;
+  }
+  .catalog:hover::before{
+    background-position: left;
+    transition: all .3s ease-in-out;
+  }
+  .catalog::before{
+    width: 50px;
+    height: 22px;
+    background-image: url(./assets/arrow.svg);
+    content: "";
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 3vw;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10px;
+    transition: all .3s ease-in-out;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 43em) {
+  html, body {
+    margin: 0;
+    font-size: 100%;
+  }
+  .pcV {
+    display: none !important;
+  }
+  .tabletV {
+    display: none !important;
+  }
+  .header_logo{
+    padding-top: 3em;
+    /* width: 13em; */
+    padding-left: 3em;
+  }
+  .navbar_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    margin-top: 4.1em;
+  }
+  .navbar_li{
+    font-family: "Oswald";
+    list-style-type: none;
+    font-size: 1.4em;
+  }
+  
+
+  .navbar_a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar_a:hover {
+    color: black;
+  }
+  
+  .navbar_a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -0.1em;
+    left: 0;
+    background-color: #68B738;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar_a:hover::before {
+    transform: scaleX(1);
+  }
+  .first_block{
+    /* width: 90%;
+    padding-left: 10%; */
+    height: 80vh;
+    display: none;
+    
+  }
+  .bucket{
+    width: 100vw;
+  }
+  .home_title{
+    font-family: "Oswald";
+    position: relative;
+    z-index: 100;
+  }
+  .home_title_h1{
+    font-weight: 400;
+    width: 100%;
+    font-size: 10vw;
+    text-align: center;
+  }
+  .home_title_p{
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center
+  }
+  .home_title_box{
+    color: white;
+    background: #68B738;
+    width: 90vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 82%;
+    margin-left: 5%;
+    font-size: 1.6em;
+    position: absolute;
+  }
+  .title_container{
+    
+    z-index: 100;
+    margin-top: -98%;
+    color: white;
+
+  }
+  .first_block_left{
+    width: 100%;
+  }
+  .header_tablet{
+    display: flex;
+    gap: 5em;
+  }
+  .logo_header{
+    width: 13em;
+  }
+  .mobile_block{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile_header{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo_mobile{
+    height: 7vh;
+  }
+  .logo2_mobile{
+    height: 3vh;
+    padding-top: 4%;
+  }
+  .burger{
+    padding-top: 2%;
+  }
+  .mobile_main{
+    /* background: url(./assets/index-background-desktop.png) no-repeat right; */
+    /* background-size: cover; */
+  }
+  .bg_mobile{
+    width: 100%;
+  }
+  .second_block{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+  }
+  .first_cat{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .second_cat{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  .fit{
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    background-color: #F2F2F2;
+    padding: 3%;
+    height:85%
+  }
+  .image_title{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+  .cat_img{
+    width: 20vw;
+  }
+  .cat_img2{
+    height: 20vw;
+  }
+  .cat_title{
+    padding-top: 4%;
+    font-size: 7vw;
+  }
+  .cat_text{
+    font-family: "Oswald";
+    padding-top: 5%;
+    font-size: 1.3em;
+  }
+  .catalog{
+    font-family: "Oswald";
+    font-size: 4.2vw;
+  }
+  .catalog:hover::before{
+    background-position: left;
+    transition: all .3s ease-in-out;
+  }
+  .catalog::before{
+    width: 50px;
+    height: 22px;
+    background-image: url(./assets/arrow.svg);
+    content: "";
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 3vw;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10px;
+    transition: all .3s ease-in-out;
+  }
+  .line_mobile{
+    border-bottom: 1px solid #D9D9D9;
+  }
+}
